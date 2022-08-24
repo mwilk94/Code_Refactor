@@ -1,0 +1,26 @@
+* {
+    font-size: 20px;
+  }
+
+:root {
+    --light: #f3abb6; 
+    --dark: #9f8189;
+    --highlight: #ffe5d8;
+  }
+
+body {
+    background-color: var(--light);
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 250%;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 10px;
+}
