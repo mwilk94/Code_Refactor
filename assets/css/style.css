@@ -24,3 +24,26 @@ h1 {
     color: var(--light);
     padding: 10px;
 }
+
+nav ul {
+    /* position: sticky; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--light); */
+    text-decoration: underline;
+    padding-right: 15px;
+    list-style-type: none;
+}
+
+#navcontainer a {
+    display: block;
+    width: 120px;
+    text-decoration: none;
+}
+
+header a {
+    font-size: 25px;
+    color: #ffcad4;
+}
