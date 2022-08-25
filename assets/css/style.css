@@ -78,3 +78,22 @@ header a {
     color: var(--dark);
     text-shadow: 2px 2px var(--light);
 }
+
+/* About me */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    font-size: 200%;
+    border-bottom: solid var(--dark);
+    margin: 20px;
+    color: var(--dark);
+}
+
+main p {
+    margin: 0px 20px;
+    line-height: 1.5;
+    color: var(--dark);
+}
