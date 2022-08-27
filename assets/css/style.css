@@ -26,12 +26,12 @@ h1 {
 }
 
 nav ul {
-    /* position: sticky; */
+    position: sticky;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--light); */
+    background-color: var(--light);
     text-decoration: underline;
     padding-right: 15px;
     list-style-type: none;
@@ -110,16 +110,21 @@ main p {
     border-bottom:  solid var(--dark);
     margin: 20px;
     color: var(--dark);
+    display: block;
 }
 
 .container {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
 }
+
 /* images */
 
 .container img {
-    height: 300px;
+    height: 320px;
+    width: 410px;
     flex: 0 0 90%;
     margin: 8px;
     cursor: pointer;
@@ -133,16 +138,117 @@ footer h2 {
     border-bottom: solid var(--dark);
     margin: 20px;
     color: var(--dark);
-  }
+    text-shadow: 2px 2px var(--light);
+}
+
   footer {
     padding-bottom: 20px;
-  }
-  footer li {
+}
+  
+footer li {
     margin-left: 8px;
     list-style-type: none;
-  }
-  footer a {
+}
+
+footer a {
     color: var(--dark);
+}
+  
+  
+
+  
+  /*--------- Media queries for Medium size/tablet -------------------------------------------------- */
+@media screen and (min-width: 576px) {
+    .hero h2 {
+        text-align: right;
+        padding-right: 10px;
+        margin-left: 50px;
+    }
+    .hero img {
+        display: block;
+        height: 250px;
+        opacity: 1;
+      }}
+  
+    footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer li {
+        flex-grow: 1;
+    }
+  
+  @media screen and (min-width: 992px) {
+    header {
+        height: 130px;
+        background-color: var(--light);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 {
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+    header ul {
+        margin-right: 20px;
+    }
+    .hero {
+        padding-right: 20px;
+    }
+  
+    /* About me */
+    main {
+        flex-direction: row;
+        margin: 20px 0px;
+    }
+    
+    main h2 {
+        border-right: solid var(--dark);
+        padding-right: 10px;
+        padding-left: 29px;
+        border-bottom: hidden;
+        text-align: right;
+    }
+    
+    /* work section */
+    
+    .mywork {
+        flex-direction: row;
+        margin: 30px 0px;
+    }
+    
+    .mywork h2 {
+        border-right: solid var(--dark);
+        padding-left: 46px;
+        padding-right: 9.5px;
+        border-bottom: hidden;    
+        text-align: right;
+    }
+    /* footer */
+    footer {
+        display: flex;
+    }
+    footer h2 {
+        border-right: solid var(--dark);
+        padding-right: 10px;
+        border-bottom: hidden;
+        text-align: right;
+        margin-left: -1.35%;
+        left: 10px;
+    }
+    footer ul {
+        flex-basis: 100%;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    main div {
+        display: flex;
+        flex-direction: row;
+    }
   }
   
   
