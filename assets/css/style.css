@@ -80,8 +80,9 @@ a:active {
 }
 
 .hero h2{
-    font-size: 250%;
+    font-size: 165%;
     text-align: center;
+    margin-top: 100px;
     margin-bottom: 20px;
     color: var(--dark);
     text-shadow: 2px 2px var(--light);
@@ -155,7 +156,7 @@ footer h2 {
     text-shadow: 2px 2px var(--light);
 }
 
-  footer {
+footer {
     padding-bottom: 20px;
 }
   
@@ -172,7 +173,7 @@ footer a {
   /*--------- Media queries for Medium size/tablet -------------------------------------------------- */
 @media screen and (min-width: 576px) {
     .hero h2 {
-        text-align: right;
+        text-align: inherit;
         padding-right: 10px;
         margin-left: 50px;
     }
