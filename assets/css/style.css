@@ -48,6 +48,14 @@ header a {
     color: #ffcad4;
 }
 
+a:hover {
+    color: var(--dark);
+}
+
+a:active {
+   opacity: 0.5; 
+}
+
 .hero {
     background-image: url("../images/DSC00591.JPG");
     background-size: cover;
@@ -130,7 +138,13 @@ main p {
     cursor: pointer;
 }
 
+img:hover {
+    opacity: 0.8;
+}
 
+img:active {
+    box-shadow: 2px 2px 5px var(--dark);
+}
 
 /* footer */
 footer h2 {
@@ -151,11 +165,9 @@ footer li {
 }
 
 footer a {
-    color: var(--dark);
+    color: #ffcad4;
 }
   
-  
-
   
   /*--------- Media queries for Medium size/tablet -------------------------------------------------- */
 @media screen and (min-width: 576px) {
